@@ -1,3 +1,3 @@
 # Quote Generator
 
-Demo: aymdi.github.io/quote-generator
+Demo: https://aymdi.github.io/password-generator/
