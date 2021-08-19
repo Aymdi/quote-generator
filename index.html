@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/21fcb85cbe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Quote Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quotes-container">
+            <p id="quote"></p>
+            <h3 id="author"></h3>
+            <footer><p>© 2021 &nbsp<a href="https://github.com/Aymdi" target="_blank" rel="nofollow">Aymdi</a></p></footer>
+            
+        </div>
+        <div class="button">
+            <button onclick="generate()" type="button" class="btn btn-primary">Generate</button>
+        </div>
+        
+    </div>
+    
+
+
+    <script>
+        function generate() {
+            var quotes = {
+            "-Albert Camus": '"The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion."',
+            "-Lewis B. Smedes": '"You will know that forgiveness has begun when you recall those who hurt you and feel the power to wish them well."',
+            "-Tyler Perry" : '"It s not an easy journey, to get to a place where you forgive people. But it is such a powerful place, because it frees you."',
+            "-Aymane": '"Pitzu !"'
+            }
+
+            var authors = Object.keys(quotes);
+            var author = authors[Math.floor(Math.random() * authors.length)];
+            var quote = quotes[author];
+
+            document.getElementById("quote").innerHTML = quote;
+            document.getElementById("author").innerHTML = author;
+        }
+    </script>
+</body>
+</html>
