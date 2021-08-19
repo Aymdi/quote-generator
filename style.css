@@ -1,0 +1,45 @@
+body{
+    background-color: darkcyan;
+}
+
+.container{
+    width: 1280px;
+    height: 100vh;
+    display: flex;
+
+}
+
+.quotes-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 450px;
+    margin: auto;
+    width: 900px;
+    text-align: center;
+    min-height: 400px;
+    padding: 0 25px;
+    color: cadetblue;
+    border-radius: 10px;
+    background-color: rgb(42, 90, 180);
+    border: 10px solid black;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9); 
+}
+
+.quotes-container p{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.quotes-container h3{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Dancing Scirpt', cursive;
+}
+
+.button{
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+}
